@@ -22,12 +22,25 @@ state = {
 
 
   addContact = newContact => {
+    const { contacts } = this.state;
+    console.log(newContact)
+    const isExist = contacts.some(({ name }) => name.toLowerCase() === newContact.name.toLowerCase());
+    console.log(isExist)
+
+    if (isExist) {
+    alert(`${newContact.name} is already in contacts.`);
+  return
+    }
+
     this.setState(prevState => ({
       contacts: [...prevState.contacts,
       { id: nanoid(), ...newContact }],
     }));
     
   };
+
+  
+ 
 
   changeFilter = evt => {
     console.log(evt)
