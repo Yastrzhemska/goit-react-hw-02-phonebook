@@ -1,6 +1,6 @@
 import { DeleteBtn, ItemContact } from './ContactList.styled';
 
-export const ContactList = ({ title, contacts, onDelete }) => {
+export const ContactList = ({ contacts, onDelete }) => {
   return (
     <>
       <ul>
