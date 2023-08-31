@@ -23,8 +23,9 @@ state = {
 
   addContact = newContact => {
     const { contacts } = this.state;
+    console.log(contacts)
     console.log(newContact)
-    const isExist = contacts.some(({ name }) => name.toLowerCase() === newContact.name.toLowerCase());
+    const isExist = contacts.some( contact => contact.name.toLowerCase() === newContact.name.toLowerCase());
     console.log(isExist)
 
     if (isExist) {
@@ -40,7 +41,6 @@ state = {
   };
 
   
- 
 
   changeFilter = evt => {
     console.log(evt)
