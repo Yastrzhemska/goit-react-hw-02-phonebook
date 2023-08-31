@@ -1,9 +1,9 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
 
-import { PhoneForm } from '../components/Form/PhoneForm';
-import { ContactList } from '../components/ContactsList/ContactsList';
-import { FilterField } from '../components/FilterField/FilterField';
+import { PhoneForm } from '../Form/PhoneForm';
+import { ContactList } from '../ContactsList/ContactsList';
+import { FilterField } from '../FilterField/FilterField';
 
 import { Title, SubTitle } from './App.styled';
 
